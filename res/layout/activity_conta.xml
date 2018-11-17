@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Conta1Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/Conta2Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="22dp"
+        android:paddingRight="16dp">
+
+        <EditText
+            android:id="@+id/EdtNomeConta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome da conta"
+            android:maxLength="20"
+            android:textColorHint="@color/cardview_dark_background" />
+
+        <EditText
+            android:id="@+id/EdtSaldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="10"
+            android:hint="Saldo Inicial"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/cardview_dark_background" />
+
+        <Spinner
+            android:id="@+id/spinnerTipoConta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:id="@+id/Conta3Layout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/BtnVoltar"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="18dp"
+                android:text="Voltar" />
+
+            <Button
+                android:id="@+id/BtnSalvar"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="18dp"
+                android:text="Salvar" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
